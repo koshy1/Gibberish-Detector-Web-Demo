@@ -1,0 +1,58 @@
+{
+  "name": "gibberish-detector-web-demo",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "baseui": "^9.4.1",
+    "d3-dsv": "^1.1.1",
+    "fusion-cli": "^2.2.0",
+    "fusion-core": "^2.0.2",
+    "fusion-plugin-i18n": "^2.3.2",
+    "fusion-plugin-react-helmet-async": "^2.0.4",
+    "fusion-plugin-react-redux": "^2.0.6",
+    "fusion-plugin-react-router": "^2.0.4",
+    "fusion-plugin-rpc": "^3.3.0",
+    "fusion-plugin-rpc-redux-react": "^4.0.5",
+    "fusion-plugin-styletron-react": "^3.0.5",
+    "fusion-plugin-universal-events": "^2.0.3",
+    "fusion-react": "^3.1.1",
+    "fusion-tokens": "^2.0.2",
+    "global": "^4.4.0",
+    "isomorphic-fetch": "^2.2.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-csv": "^1.1.1",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.1.1",
+    "redux": "^4.0.4",
+    "styletron-engine-atomic": "^1.4.1",
+    "styletron-react": "^5.2.0"
+  },
+  "scripts": {
+    "dev": "fusion dev",
+    "lint": "eslint .",
+    "test": "fusion test",
+    "build": "fusion build",
+    "build-production": "fusion build --production",
+    "heroku-postbuild": "fusion build --production && sed -i \"s;$(pwd);/app;g\" .fusion/dist/production/server/server-main.js",
+    "start": "fusion start --port=$PORT"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "enzyme": "^3.10.0",
+    "eslint": "^6.0.1",
+    "eslint-config-fusion": "^6.0.1",
+    "eslint-plugin-cup": "^2.0.2",
+    "eslint-plugin-flowtype": "^4.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.17.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.15.1",
+    "eslint-plugin-react-hooks": "^1.6.1",
+    "prettier": "^1.18.2"
+  },
+  "files": [
+    "dist",
+    "src"
+  ]
+}
